@@ -1,0 +1,27 @@
+const Images = {
+    userImg: require('./avatar-icon.png'),
+    noDataImage: require('./Building.png'),
+    favicon: require('./favicon.png'),
+    hearticon: require('./hearticon.png'),
+    starIcon: require('./Star.png'),
+    aboutImg: require('./about.png'),
+    aboutCardImg: require('./about-card.png'),
+    featureImg: require('./feature-img.png'),
+    heroImage: require('./hero-img01.jpg'),
+    signupImg: require('./login.jpg'),
+    icon01: require('./icon01.png'),
+    icon02: require('./icon02.png'),
+    icon03: require('./icon03.png'),
+    icon04: require('./icon04.png'),
+    icon05: require('./icon05.png'),
+    icon06: require('./icon06.png'),
+    icon07: require('./icon07.png'),
+    icon08: require('./icon08.png'),
+    icon09: require('./icon09.png'),
+    icon10: require('./icon10.png'),
+    icon11: require('./icon11.png'),
+    icon12: require('./icon12.png'),
+    icon13: require('./icon13.png'),
+}
+
+export default Images;
