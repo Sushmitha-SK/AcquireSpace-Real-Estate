@@ -258,7 +258,7 @@ const authController = {
                 }
             });
 
-            const resetUrl = `http://localhost:3000/resetPassword/${resetToken}`;
+            const resetUrl = `https://acquirespace-real-estate.vercel.app/resetPassword/${resetToken}`;
 
             const htmlContent = `
                 <div style="font-family: Arial, sans-serif; line-height: 1.5; color: #333;">
@@ -279,7 +279,7 @@ const authController = {
                 to: user.email,
                 from: 'noreply@example.com',
                 subject: 'Password Reset',
-                html: htmlContent, 
+                html: htmlContent,
             });
 
             res.json({ msg: 'Password reset email sent' });
