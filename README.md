@@ -1,4 +1,4 @@
-# AcquireSpace Real Estate Project
+# AcquireSpace 
 
 AcquireSpace is a full-stack real estate application designed to streamline the property listing and acquisition process. This project features a robust backend and a responsive frontend, enabling users to explore listings, manage properties, and interact with the platform seamlessly.
 
