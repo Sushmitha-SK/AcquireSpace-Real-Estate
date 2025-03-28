@@ -364,7 +364,29 @@ const listingController = {
             console.error('Error fetching availability data:', error);
             res.status(500).json({ msg: 'Failed to fetch availability data', error: error.message });
         }
-    }
+    },
+
+    getListingsBySpecificCategory: async (req, res) => {
+        try {
+            const category = req.params.category;
+
+            if (!category) {
+                return res.status(400).json({ msg: 'Category is required!' });
+            }
+
+            const listings = await Listing.find({ category });
+
+            if (!listings || listings.length === 0) {
+                return res.status(404).json({ msg: 'No listings found for the given category!' });
+            }
+
+            res.status(200).json(listings);
+        } catch (error) {
+            console.error('Error fetching listings by category:', error);
+            res.status(500).json({ msg: 'Failed to retrieve listings by category', error: error.message });
+        }
+    },
+
 
 };
 
