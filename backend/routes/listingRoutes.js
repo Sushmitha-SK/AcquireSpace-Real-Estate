@@ -11,6 +11,7 @@ router.post('/', authMiddleware, listingController.createListing);
 router.delete('/:id', authMiddleware, listingController.deleteListing);
 router.put('/:id', authMiddleware, listingController.updateListing);
 router.get('/recent-by-user', authMiddleware, listingController.getRecentListingsByUser);
+router.get('/category/:category', authMiddleware, listingController.getListingsBySpecificCategory);
 
 router.get('/:id', authMiddleware, listingController.getListing); 
 router.get('/:id/details', authMiddleware, listingController.getListingDetailsById); 
